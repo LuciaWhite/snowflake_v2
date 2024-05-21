@@ -1,6 +1,1 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
-select * from SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.LINEITEM
+{{ config(materialized="table") }} select * from snowflake_sample_data.tpch_sf1.lineitem
